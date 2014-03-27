@@ -25,6 +25,7 @@
 		23CD81AB18E45C6B00372B87 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81AA18E45C6B00372B87 /* RootViewController.m */; };
 		23CD81AF18E45E9100372B87 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81AD18E45E9100372B87 /* MapViewController.m */; };
 		23CD81B018E45E9100372B87 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81AE18E45E9100372B87 /* MapViewController.xib */; };
+		23CD81B218E45F9000372B87 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD81B118E45F9000372B87 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		23CD81AC18E45E9100372B87 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		23CD81AD18E45E9100372B87 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		23CD81AE18E45E9100372B87 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		23CD81B118E45F9000372B87 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CD81B218E45F9000372B87 /* MapKit.framework in Frameworks */,
 				23CD817418E4592C00372B87 /* CoreGraphics.framework in Frameworks */,
 				23CD817818E4592C00372B87 /* CoreData.framework in Frameworks */,
 				23CD817618E4592C00372B87 /* UIKit.framework in Frameworks */,
@@ -116,6 +119,7 @@
 		23CD817018E4592C00372B87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23CD81B118E45F9000372B87 /* MapKit.framework */,
 				23CD817118E4592C00372B87 /* Foundation.framework */,
 				23CD817318E4592C00372B87 /* CoreGraphics.framework */,
 				23CD817518E4592C00372B87 /* UIKit.framework */,
