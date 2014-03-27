@@ -30,6 +30,8 @@
 		23CD81B718E461D300372B87 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81B518E461D300372B87 /* ListViewController.xib */; };
 		23CD81BB18E461FB00372B87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81B918E461FB00372B87 /* DetailViewController.m */; };
 		23CD81BC18E461FB00372B87 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81BA18E461FB00372B87 /* DetailViewController.xib */; };
+		23CD81C018E4621300372B87 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81BE18E4621300372B87 /* AboutViewController.m */; };
+		23CD81C118E4621300372B87 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81BF18E4621300372B87 /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		23CD81B818E461FB00372B87 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		23CD81B918E461FB00372B87 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		23CD81BA18E461FB00372B87 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		23CD81BD18E4621300372B87 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		23CD81BE18E4621300372B87 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		23CD81BF18E4621300372B87 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 		23CD816518E4592C00372B87 = {
 			isa = PBXGroup;
 			children = (
+				23CD81BD18E4621300372B87 /* AboutViewController.h */,
+				23CD81BE18E4621300372B87 /* AboutViewController.m */,
+				23CD81BF18E4621300372B87 /* AboutViewController.xib */,
 				23CD81B818E461FB00372B87 /* DetailViewController.h */,
 				23CD81B918E461FB00372B87 /* DetailViewController.m */,
 				23CD81BA18E461FB00372B87 /* DetailViewController.xib */,
@@ -265,6 +273,7 @@
 				23CD81B018E45E9100372B87 /* MapViewController.xib in Resources */,
 				23CD81BC18E461FB00372B87 /* DetailViewController.xib in Resources */,
 				23CD81B718E461D300372B87 /* ListViewController.xib in Resources */,
+				23CD81C118E4621300372B87 /* AboutViewController.xib in Resources */,
 				23CD818918E4592C00372B87 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +295,7 @@
 			files = (
 				23CD818418E4592C00372B87 /* AppDelegate.m in Sources */,
 				23CD818718E4592C00372B87 /* mosquitoSpace.xcdatamodeld in Sources */,
+				23CD81C018E4621300372B87 /* AboutViewController.m in Sources */,
 				23CD81B618E461D300372B87 /* ListViewController.m in Sources */,
 				23CD81AF18E45E9100372B87 /* MapViewController.m in Sources */,
 				23CD81AB18E45C6B00372B87 /* RootViewController.m in Sources */,
