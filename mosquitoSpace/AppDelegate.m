@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
@@ -22,8 +23,14 @@
     
     
     RootViewController *rvc = [[RootViewController alloc] init];
-    self.window.rootViewController = rvc;
+    
+    
+    MapViewController *mvc = [[MapViewController alloc] init];
+    
+    rvc.viewControllers = @[mvc];
+    
 
+    self.window.rootViewController = rvc;
     //-------
 
     
