@@ -23,6 +23,8 @@
 		23CD819B18E4592C00372B87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23CD819918E4592C00372B87 /* InfoPlist.strings */; };
 		23CD819D18E4592C00372B87 /* mosquitoSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD819C18E4592C00372B87 /* mosquitoSpaceTests.m */; };
 		23CD81AB18E45C6B00372B87 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81AA18E45C6B00372B87 /* RootViewController.m */; };
+		23CD81AF18E45E9100372B87 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81AD18E45E9100372B87 /* MapViewController.m */; };
+		23CD81B018E45E9100372B87 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81AE18E45E9100372B87 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		23CD819C18E4592C00372B87 /* mosquitoSpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mosquitoSpaceTests.m; sourceTree = "<group>"; };
 		23CD81A918E45C6B00372B87 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		23CD81AA18E45C6B00372B87 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		23CD81AC18E45E9100372B87 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		23CD81AD18E45E9100372B87 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		23CD81AE18E45E9100372B87 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,9 @@
 		23CD816518E4592C00372B87 = {
 			isa = PBXGroup;
 			children = (
+				23CD81AC18E45E9100372B87 /* MapViewController.h */,
+				23CD81AD18E45E9100372B87 /* MapViewController.m */,
+				23CD81AE18E45E9100372B87 /* MapViewController.xib */,
 				23CD81A918E45C6B00372B87 /* RootViewController.h */,
 				23CD81AA18E45C6B00372B87 /* RootViewController.m */,
 				23CD817918E4592C00372B87 /* mosquitoSpace */,
@@ -234,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23CD817E18E4592C00372B87 /* InfoPlist.strings in Resources */,
+				23CD81B018E45E9100372B87 /* MapViewController.xib in Resources */,
 				23CD818918E4592C00372B87 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +264,7 @@
 			files = (
 				23CD818418E4592C00372B87 /* AppDelegate.m in Sources */,
 				23CD818718E4592C00372B87 /* mosquitoSpace.xcdatamodeld in Sources */,
+				23CD81AF18E45E9100372B87 /* MapViewController.m in Sources */,
 				23CD81AB18E45C6B00372B87 /* RootViewController.m in Sources */,
 				23CD818018E4592C00372B87 /* main.m in Sources */,
 			);
