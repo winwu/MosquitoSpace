@@ -28,6 +28,8 @@
 		23CD81B218E45F9000372B87 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD81B118E45F9000372B87 /* MapKit.framework */; };
 		23CD81B618E461D300372B87 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81B418E461D300372B87 /* ListViewController.m */; };
 		23CD81B718E461D300372B87 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81B518E461D300372B87 /* ListViewController.xib */; };
+		23CD81BB18E461FB00372B87 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CD81B918E461FB00372B87 /* DetailViewController.m */; };
+		23CD81BC18E461FB00372B87 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CD81BA18E461FB00372B87 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		23CD81B318E461D300372B87 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		23CD81B418E461D300372B87 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		23CD81B518E461D300372B87 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		23CD81B818E461FB00372B87 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		23CD81B918E461FB00372B87 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		23CD81BA18E461FB00372B87 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,9 @@
 		23CD816518E4592C00372B87 = {
 			isa = PBXGroup;
 			children = (
+				23CD81B818E461FB00372B87 /* DetailViewController.h */,
+				23CD81B918E461FB00372B87 /* DetailViewController.m */,
+				23CD81BA18E461FB00372B87 /* DetailViewController.xib */,
 				23CD81B318E461D300372B87 /* ListViewController.h */,
 				23CD81B418E461D300372B87 /* ListViewController.m */,
 				23CD81B518E461D300372B87 /* ListViewController.xib */,
@@ -255,6 +263,7 @@
 			files = (
 				23CD817E18E4592C00372B87 /* InfoPlist.strings in Resources */,
 				23CD81B018E45E9100372B87 /* MapViewController.xib in Resources */,
+				23CD81BC18E461FB00372B87 /* DetailViewController.xib in Resources */,
 				23CD81B718E461D300372B87 /* ListViewController.xib in Resources */,
 				23CD818918E4592C00372B87 /* Images.xcassets in Resources */,
 			);
@@ -281,6 +290,7 @@
 				23CD81AF18E45E9100372B87 /* MapViewController.m in Sources */,
 				23CD81AB18E45C6B00372B87 /* RootViewController.m in Sources */,
 				23CD818018E4592C00372B87 /* main.m in Sources */,
+				23CD81BB18E461FB00372B87 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
