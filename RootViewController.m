@@ -7,6 +7,10 @@
 //
 
 #import "RootViewController.h"
+#import "MapViewController.h"
+#import "ListViewController.h"
+#import "AboutViewController.h"
+
 
 @interface RootViewController ()
 
@@ -27,6 +31,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MapViewController *mvc = [[MapViewController alloc] init];
+    ListViewController *lvc = [[ListViewController alloc] init];
+    AboutViewController *avc = [[AboutViewController alloc] init];
+    
+    UINavigationController *nav_mvc = [[UINavigationController alloc] initWithRootViewController:mvc];
+    UINavigationController *nav_lvc = [[UINavigationController alloc] initWithRootViewController:lvc];
+    UINavigationController *nav_avc = [[UINavigationController alloc] initWithRootViewController:avc];
+    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
+    nav_mvc.tabBarItem = item;
+    
+    
+    self.viewControllers = @[nav_mvc, nav_lvc, nav_avc];
+
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,9 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
-#import "MapViewController.h"
-#import "ListViewController.h"
-#import "AboutViewController.h"
+
 
 @implementation AppDelegate
 
@@ -26,20 +24,6 @@
     
     RootViewController *rvc = [[RootViewController alloc] init];
     
-    
-    MapViewController *mvc = [[MapViewController alloc] init];
-    ListViewController *lvc = [[ListViewController alloc] init];
-    AboutViewController *avc = [[AboutViewController alloc] init];
-    
-    UINavigationController *nav_mvc = [[UINavigationController alloc] initWithRootViewController:mvc];
-    UINavigationController *nav_lvc = [[UINavigationController alloc] initWithRootViewController:lvc];
-    UINavigationController *nav_avc = [[UINavigationController alloc] initWithRootViewController:avc];
-    nav_mvc.tabBarItem.title = @"Google Map!";
-    
-    //rvc.viewControllers = @[mvc, lvc, avc];
-    rvc.viewControllers = @[nav_mvc, nav_lvc, nav_avc];
-    
-
     self.window.rootViewController = rvc;
     //-------
 
