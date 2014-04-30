@@ -10,5 +10,6 @@
 
 @interface ListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *locationTableView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
 
 @end

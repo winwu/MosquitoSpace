@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AppManager : NSObject
-
++ (AppManager *)sharedInstance;
+- (NSArray *) getItems;
+- (void) getItemsAsync:(void(^)(NSArray *items))callback;
 @end

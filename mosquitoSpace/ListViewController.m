@@ -9,6 +9,7 @@
 #import "ListViewController.h"
 //like SDK
 #import <AFNetworking/AFNetworking.h>
+#import "AppManager.h"
 
 @interface ListViewController ()
 @property (nonatomic, strong) NSArray *items;
@@ -42,7 +43,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //self.title = @"List";
-    self.items = @[@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy"];
+    //self.items = @[@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy"];
+    AppManager *manager = [AppManager sharedInstance]; //+
+    
+    //同步
+    //self.items = [manager getItems]; //-
+    
+    
+    //start animation
+    self.loading.hidden = NO;
+
+    //這是非同步的做法
+    [manager getItemsAsync:^(NSArray *items) {
+        
+        //stop animation
+        self.loading.hidden = YES;
+        
+        self.items = items;
+        [self.locationTableView reloadData];
+    }];
+    
 }
 
 #pragma mark - UITableViewDelegate
