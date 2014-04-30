@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		237EB8C019114386003335CF /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 237EB8BF19114386003335CF /* AppManager.m */; };
 		23CD817218E4592C00372B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817118E4592C00372B87 /* Foundation.framework */; };
 		23CD817418E4592C00372B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817318E4592C00372B87 /* CoreGraphics.framework */; };
 		23CD817618E4592C00372B87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817518E4592C00372B87 /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		00B683FA458941A3A63EAAE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		237EB8BE19114386003335CF /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		237EB8BF19114386003335CF /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		23CD816E18E4592C00372B87 /* mosquitoSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mosquitoSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CD817118E4592C00372B87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23CD817318E4592C00372B87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -239,6 +242,8 @@
 		96A873301911369C0094A5B4 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				237EB8BE19114386003335CF /* AppManager.h */,
+				237EB8BF19114386003335CF /* AppManager.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				96A873261911353A0094A5B4 /* MapViewController.m in Sources */,
 				23CD818018E4592C00372B87 /* main.m in Sources */,
 				96A873251911353A0094A5B4 /* RootViewController.m in Sources */,
+				237EB8C019114386003335CF /* AppManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
