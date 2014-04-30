@@ -43,7 +43,7 @@
     UITabBarItem *a = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
     UITabBarItem *b = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:image tag:0];
     nav_mvc.tabBarItem = b;
-    nav_lvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"orz" image:image tag:1];
+    nav_lvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"清單列表" image:image tag:1];
     
     self.viewControllers = @[nav_mvc, nav_lvc, nav_avc];
 
