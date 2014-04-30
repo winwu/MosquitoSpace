@@ -39,7 +39,10 @@
     UINavigationController *nav_lvc = [[UINavigationController alloc] initWithRootViewController:lvc];
     UINavigationController *nav_avc = [[UINavigationController alloc] initWithRootViewController:avc];
     UIImage* image = [[UIImage alloc] init];
-    nav_mvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
+    //nav_mvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
+    UITabBarItem *a = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
+    UITabBarItem *b = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:image tag:0];
+    nav_mvc.tabBarItem = b;
     nav_lvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"orz" image:image tag:1];
     
     self.viewControllers = @[nav_mvc, nav_lvc, nav_avc];
