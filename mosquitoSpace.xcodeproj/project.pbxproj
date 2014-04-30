@@ -33,6 +33,7 @@
 		96A873281911353A0094A5B4 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A8731B1911353A0094A5B4 /* AboutViewController.xib */; };
 		96A873291911353A0094A5B4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A8731D1911353A0094A5B4 /* DetailViewController.m */; };
 		96A8732A1911353A0094A5B4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A873201911353A0094A5B4 /* MapViewController.xib */; };
+		96A873311911369C0094A5B4 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 96A8732F1911369C0094A5B4 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		96A8731F1911353A0094A5B4 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		96A873201911353A0094A5B4 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		96A873211911353A0094A5B4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		96A8732F1911369C0094A5B4 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,9 @@
 		23CD816518E4592C00372B87 = {
 			isa = PBXGroup;
 			children = (
+				96A8732B1911369C0094A5B4 /* library */,
+				96A8732C1911369C0094A5B4 /* asset */,
+				96A873301911369C0094A5B4 /* manager */,
 				23CD817918E4592C00372B87 /* mosquitoSpace */,
 				23CD819618E4592C00372B87 /* mosquitoSpaceTests */,
 				23CD817018E4592C00372B87 /* Frameworks */,
@@ -148,24 +153,24 @@
 		23CD817918E4592C00372B87 /* mosquitoSpace */ = {
 			isa = PBXGroup;
 			children = (
-				96A873141911353A0094A5B4 /* ListViewController.m */,
-				96A873151911353A0094A5B4 /* DetailViewController.xib */,
-				96A873161911353A0094A5B4 /* ListViewController.xib */,
-				96A873171911353A0094A5B4 /* RootViewController.m */,
-				96A873181911353A0094A5B4 /* MapViewController.m */,
 				96A873191911353A0094A5B4 /* AboutViewController.h */,
 				96A8731A1911353A0094A5B4 /* AboutViewController.m */,
 				96A8731B1911353A0094A5B4 /* AboutViewController.xib */,
-				96A8731C1911353A0094A5B4 /* DetailViewController.h */,
-				96A8731D1911353A0094A5B4 /* DetailViewController.m */,
-				96A8731E1911353A0094A5B4 /* ListViewController.h */,
-				96A8731F1911353A0094A5B4 /* MapViewController.h */,
-				96A873201911353A0094A5B4 /* MapViewController.xib */,
-				96A873211911353A0094A5B4 /* RootViewController.h */,
 				23CD818218E4592C00372B87 /* AppDelegate.h */,
 				23CD818318E4592C00372B87 /* AppDelegate.m */,
+				96A8731C1911353A0094A5B4 /* DetailViewController.h */,
+				96A8731D1911353A0094A5B4 /* DetailViewController.m */,
+				96A873151911353A0094A5B4 /* DetailViewController.xib */,
 				23CD818818E4592C00372B87 /* Images.xcassets */,
+				96A8731E1911353A0094A5B4 /* ListViewController.h */,
+				96A873141911353A0094A5B4 /* ListViewController.m */,
+				96A873161911353A0094A5B4 /* ListViewController.xib */,
+				96A8731F1911353A0094A5B4 /* MapViewController.h */,
+				96A873181911353A0094A5B4 /* MapViewController.m */,
+				96A873201911353A0094A5B4 /* MapViewController.xib */,
 				23CD818518E4592C00372B87 /* mosquitoSpace.xcdatamodeld */,
+				96A873211911353A0094A5B4 /* RootViewController.h */,
+				96A873171911353A0094A5B4 /* RootViewController.m */,
 				23CD817A18E4592C00372B87 /* Supporting Files */,
 			);
 			path = mosquitoSpace;
@@ -198,6 +203,44 @@
 				23CD819918E4592C00372B87 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96A8732B1911369C0094A5B4 /* library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		96A8732C1911369C0094A5B4 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				96A8732D1911369C0094A5B4 /* img */,
+				96A8732E1911369C0094A5B4 /* json */,
+			);
+			path = asset;
+			sourceTree = "<group>";
+		};
+		96A8732D1911369C0094A5B4 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		96A8732E1911369C0094A5B4 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				96A8732F1911369C0094A5B4 /* data.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		96A873301911369C0094A5B4 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23CD817E18E4592C00372B87 /* InfoPlist.strings in Resources */,
+				96A873311911369C0094A5B4 /* data.json in Resources */,
 				96A8732A1911353A0094A5B4 /* MapViewController.xib in Resources */,
 				96A873231911353A0094A5B4 /* DetailViewController.xib in Resources */,
 				96A873241911353A0094A5B4 /* ListViewController.xib in Resources */,
