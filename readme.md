@@ -18,10 +18,22 @@
 * 在 ListViewController.m 增加假 array，並且實作 numberOfRowsInSection, cellForRowAtIndexPath 把資料塞到 tabelcell。
 * 學會使用 `#pragma mark - 標記名稱`
 * 建立 AppManager class，作為 api manager，要資料的方法之後都透過 AppManager。
-* 在 AppManager 產生兩種藥資料的方法，一種是同步，一種非同步。
+* 在 AppManager 產生兩種要資料的方法，一種是同步，一種非同步。
 * ListViewController.m import AppManager，
 
+* 參考
+	* http://www.raywenderlich.com/46988/ios-design-patterns
+	* http://www.raywenderlich.com/59255/afnetworking-2-0-tutorial
+	* http://popcornylu.blogspot.tw/2011/08/objective-c-block.html
+	* http://stackoverflow.com/questions/12693197/dispatch-get-global-queue-vs-dispatch-get-main-queue
+	* http://pro.ctlok.com/2010/07/objective-c-singleton-pattern.html
 
+* 在 AppManager 寫 getJsonItems，要 local 的假資料
+* 在 AppManager 寫 getItemsAsync，注意前景與背景的資料處理，前景關於 view 的 render，背景為非同步要資料。
+* 修正 tableview 的高度，tabbar = yes, view 設定 constrain。`self.edgesForExtendedLayout=UIRectEdgeNone;`。
+	
+	
+	
 
 
 

@@ -41,6 +41,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //不要讓 tableview 跑到 tabbar 下面
+
+    // xib 的 view 要設定 tab bar
+    //記得在 xib 的 view 設定 constrain?
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    
     // Do any additional setup after loading the view from its nib.
     //self.title = @"List";
     //self.items = @[@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy",@"win", @"Jason",@"Issac", @"paddy"];
@@ -83,7 +90,12 @@
                 reuseIdentifier:cellIdentifier];
         
     }
-    cell.textLabel.text = self.items[indexPath.row];
+    NSDictionary *location = self.items[indexPath.row];
+    cell.textLabel.text = location[@"title"];
+
+    //錯誤寫法，去要 json 的 image 不是這樣要，json 的 image 都是一個網址，所以應該會跟 NSURL 有關
+    //cell.imageView.image = [UIImage imageNamed:location[@"Thumbnail"]];
+    
     NSLog(@"%d", indexPath.row);
     return cell;
 }
