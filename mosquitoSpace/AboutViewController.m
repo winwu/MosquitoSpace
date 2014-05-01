@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"About";
+    self.title = @"關於我們";
 }
 
 - (void)didReceiveMemoryWarning

@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"123";
+    self.title = @"閒置公共設施地圖";
 
 }
 
