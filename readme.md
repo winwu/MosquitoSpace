@@ -3,10 +3,24 @@
 
 * Jason Ling 和 Ｗin Wu 幫忙產出 iphone app 
 
+##TODO
+* Win 要申請 Apple 開發人員 (美金 99)
+* 上架有預期的日期嗎?
+* 我們需要整個 APP 的 UI/UX (跪求)
+
 
 ##進度log
-###3/27
-* 待補
+
+###下下一次
+* MapView 插旗子
+* 討論 MapView 可以做什麼?
+
+
+###下一次
+* 修正幾個 issue
+* TableView 如何轉頁到 DetailView
+* ListViewController 可以加搜尋 Bar 或是縣市的 Filter 嗎?
+* 製作 DetailView 
 
 ###4/30
 * 安裝 CocoaPods 並且使用 AFNetworking
@@ -33,7 +47,10 @@
 * 修正 tableview 的高度，tabbar = yes, view 設定 constrain。`self.edgesForExtendedLayout=UIRectEdgeNone;`。
 	
 	
-	
+###3/27
+* 建立基本的 project
+* 建立需要的 ViewController	
+
 
 
 
