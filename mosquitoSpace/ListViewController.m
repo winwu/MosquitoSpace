@@ -96,6 +96,11 @@
     //錯誤寫法，去要 json 的 image 不是這樣要，json 的 image 都是一個網址，所以應該會跟 NSURL 有關
     //cell.imageView.image = [UIImage imageNamed:location[@"Thumbnail"]];
     
+    NSURL *url = [NSURL URLWithString:[location objectForKey:@"Thumbnail"]];
+    NSData *locationThumbnail = [NSData dataWithContentsOfURL:url];
+    cell.imageView.image = [UIImage imageWithData:locationThumbnail];
+    
+    
     NSLog(@"%d", indexPath.row);
     return cell;
 }
