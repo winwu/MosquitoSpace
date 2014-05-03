@@ -40,10 +40,12 @@
     UINavigationController *nav_avc = [[UINavigationController alloc] initWithRootViewController:avc];
     UIImage* image = [[UIImage alloc] init];
     //nav_mvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
+    //所以 image 不能填 nil
     //UITabBarItem *a = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:nil tag:0];
     UITabBarItem *b = [[UITabBarItem alloc] initWithTitle:@"AAAA" image:image tag:0];
     nav_mvc.tabBarItem = b;
     nav_lvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"清單列表" image:image tag:1];
+    nav_avc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"關於我們" image: image tag:2];
     
     self.viewControllers = @[nav_mvc, nav_lvc, nav_avc];
 
