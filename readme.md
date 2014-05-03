@@ -7,6 +7,12 @@
 * Win 要申請 Apple 開發人員 (美金 99)
 * 上架有預期的日期嗎?
 * 我們需要整個 APP 的 UI/UX (跪求)
+* [如何使用 UI 設計好的 icon](https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/StoringAppIconsandLaunchImagesinanAssetCatalog/StoringAppIconsandLaunchImagesinanAssetCatalog.html#//apple_ref/doc/uid/TP40013303-CH7-SW1
+)
+
+
+##給未來的 UI/UX Todo
+* 圖檔命名方式: 參考 [IOS developer guide 說明](https://developer.apple.com/library/ios/qa/qa1686/_index.html)
 
 
 ##進度log
@@ -21,6 +27,10 @@
 * TableView 如何轉頁到 DetailView
 * ListViewController 可以加搜尋 Bar 或是縣市的 Filter 嗎?
 * 製作 DetailView 
+
+###5/4
+* 修正 #2
+* 增加一點 about 的內容
 
 ###4/30
 * 安裝 CocoaPods 並且使用 AFNetworking
