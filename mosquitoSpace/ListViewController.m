@@ -81,6 +81,8 @@
     //告訴表格視圖一個段落有幾列
 }
 
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"ListTableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -98,7 +100,21 @@
     
     NSURL *url = [NSURL URLWithString:[location objectForKey:@"Thumbnail"]];
     NSData *locationThumbnail = [NSData dataWithContentsOfURL:url];
-    cell.imageView.image = [UIImage imageWithData:locationThumbnail];
+    
+    
+
+    
+    //cell.imageView.image = [UIImage imageWithData:locationThumbnail];
+    
+    //---
+    //fix images in different dimensions
+    //reference: http://stackoverflow.com/questions/3553331/resize-cell-uiimageview-image
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:locationThumbnail]];
+    
+    imageView.frame = CGRectMake(0, 0, 50, 50);
+    [cell addSubview:imageView];
+    
+    //---
     
     
     NSLog(@"%d", indexPath.row);
