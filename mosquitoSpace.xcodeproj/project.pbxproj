@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2307CB5E19156AA800D6DBFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2307CB5D19156AA800D6DBFB /* CoreLocation.framework */; };
 		237EB8C019114386003335CF /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 237EB8BF19114386003335CF /* AppManager.m */; };
 		23CD817218E4592C00372B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817118E4592C00372B87 /* Foundation.framework */; };
 		23CD817418E4592C00372B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817318E4592C00372B87 /* CoreGraphics.framework */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		00B683FA458941A3A63EAAE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2307CB5D19156AA800D6DBFB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		237EB8BE19114386003335CF /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
 		237EB8BF19114386003335CF /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		23CD816E18E4592C00372B87 /* mosquitoSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mosquitoSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2307CB5E19156AA800D6DBFB /* CoreLocation.framework in Frameworks */,
 				23CD81B218E45F9000372B87 /* MapKit.framework in Frameworks */,
 				23CD817418E4592C00372B87 /* CoreGraphics.framework in Frameworks */,
 				23CD817818E4592C00372B87 /* CoreData.framework in Frameworks */,
@@ -142,6 +145,7 @@
 		23CD817018E4592C00372B87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2307CB5D19156AA800D6DBFB /* CoreLocation.framework */,
 				23CD81B118E45F9000372B87 /* MapKit.framework */,
 				23CD817118E4592C00372B87 /* Foundation.framework */,
 				23CD817318E4592C00372B87 /* CoreGraphics.framework */,
