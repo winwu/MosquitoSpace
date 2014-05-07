@@ -28,6 +28,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"關於我們";
+    
+    //insert subview to scrollView
+    [self.scrollView addSubview:self.contentView];
+    
+    //get contentView size
+    CGSize contentSize = self.contentView.frame.size;
+    self.scrollView.contentSize = contentSize;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
