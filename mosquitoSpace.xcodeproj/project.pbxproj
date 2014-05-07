@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2307CB5E19156AA800D6DBFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2307CB5D19156AA800D6DBFB /* CoreLocation.framework */; };
+		2308C84D191A6B1500ADE6D7 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2308C848191A6B1500ADE6D7 /* 005.jpg */; };
+		2308C84E191A6B1500ADE6D7 /* 004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2308C849191A6B1500ADE6D7 /* 004.jpg */; };
+		2308C84F191A6B1500ADE6D7 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2308C84A191A6B1500ADE6D7 /* 003.jpg */; };
+		2308C850191A6B1500ADE6D7 /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2308C84B191A6B1500ADE6D7 /* 001.jpg */; };
+		2308C851191A6B1500ADE6D7 /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2308C84C191A6B1500ADE6D7 /* 002.jpg */; };
 		237EB8C019114386003335CF /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 237EB8BF19114386003335CF /* AppManager.m */; };
 		23CD817218E4592C00372B87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817118E4592C00372B87 /* Foundation.framework */; };
 		23CD817418E4592C00372B87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD817318E4592C00372B87 /* CoreGraphics.framework */; };
@@ -51,6 +56,11 @@
 /* Begin PBXFileReference section */
 		00B683FA458941A3A63EAAE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2307CB5D19156AA800D6DBFB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2308C848191A6B1500ADE6D7 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		2308C849191A6B1500ADE6D7 /* 004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.jpg; sourceTree = "<group>"; };
+		2308C84A191A6B1500ADE6D7 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		2308C84B191A6B1500ADE6D7 /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
+		2308C84C191A6B1500ADE6D7 /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
 		237EB8BE19114386003335CF /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
 		237EB8BF19114386003335CF /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 		23CD816E18E4592C00372B87 /* mosquitoSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mosquitoSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +241,11 @@
 		96A8732D1911369C0094A5B4 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				2308C848191A6B1500ADE6D7 /* 005.jpg */,
+				2308C849191A6B1500ADE6D7 /* 004.jpg */,
+				2308C84A191A6B1500ADE6D7 /* 003.jpg */,
+				2308C84B191A6B1500ADE6D7 /* 001.jpg */,
+				2308C84C191A6B1500ADE6D7 /* 002.jpg */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -329,13 +344,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2308C851191A6B1500ADE6D7 /* 002.jpg in Resources */,
 				23CD817E18E4592C00372B87 /* InfoPlist.strings in Resources */,
 				96A873311911369C0094A5B4 /* data.json in Resources */,
 				96A8732A1911353A0094A5B4 /* MapViewController.xib in Resources */,
+				2308C84E191A6B1500ADE6D7 /* 004.jpg in Resources */,
+				2308C84D191A6B1500ADE6D7 /* 005.jpg in Resources */,
 				96A873231911353A0094A5B4 /* DetailViewController.xib in Resources */,
 				96A873241911353A0094A5B4 /* ListViewController.xib in Resources */,
+				2308C84F191A6B1500ADE6D7 /* 003.jpg in Resources */,
 				23CD818918E4592C00372B87 /* Images.xcassets in Resources */,
 				96A873281911353A0094A5B4 /* AboutViewController.xib in Resources */,
+				2308C850191A6B1500ADE6D7 /* 001.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
