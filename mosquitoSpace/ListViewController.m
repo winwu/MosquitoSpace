@@ -10,6 +10,7 @@
 //like SDK
 #import <AFNetworking/AFNetworking.h>
 #import "AppManager.h"
+#import "DetailViewController.h"
 
 @interface ListViewController ()
 @property (nonatomic, strong) NSArray *items;
@@ -73,6 +74,12 @@
 }
 
 #pragma mark - UITableViewDelegate
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DetailViewController *dvc = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:dvc animated:YES];
+    
+}
+
 
 #pragma mark - UITableViewDataSource
 
