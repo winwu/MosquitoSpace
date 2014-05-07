@@ -40,15 +40,17 @@
     
     self.view.backgroundColor = [UIColor orangeColor];
     
+    NSInteger imageViewHeight = 200;
+    NSInteger imageViewWidth = 320;
+    
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.frame = CGRectMake(0, 100, 320, 100);
+    scrollView.frame = CGRectMake(0, 100, imageViewWidth, imageViewHeight);
     
     
     UIView *contentView = [[UIView alloc] init];
     
     
-    NSInteger imageViewHeight = 200;
-    NSInteger imageViewWidth = 320;
+    
     NSArray *images = @[[UIImage imageNamed:@"001.jpg"],
                         [UIImage imageNamed:@"002.jpg"],
                         [UIImage imageNamed:@"003.jpg"],
