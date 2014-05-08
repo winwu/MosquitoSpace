@@ -8,8 +8,8 @@
 
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
-
+@interface DetailViewController () <UIScrollViewDelegate>
+@property (nonatomic, strong) UIPageControl *pageControl;
 @end
 
 @implementation DetailViewController
@@ -39,12 +39,16 @@
 -(void)createImageScrollView{
     
     self.view.backgroundColor = [UIColor orangeColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     NSInteger imageViewHeight = 200;
     NSInteger imageViewWidth = 320;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = CGRectMake(0, 100, imageViewWidth, imageViewHeight);
+    scrollView.autoresizesSubviews = NO;
+    scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
     
     
     UIView *contentView = [[UIView alloc] init];
@@ -57,7 +61,7 @@
                         [UIImage imageNamed:@"004.jpg"],
                         [UIImage imageNamed:@"005.jpg"]];
     
-    contentView.frame = CGRectMake(0, 0, imageViewWidth* images.count, imageViewHeight);
+    contentView.frame = CGRectMake(0, 0, imageViewWidth * images.count, imageViewHeight);
     for (int i = 0 ; i< images.count; i++) {
         UIImage *image = images[i];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -73,6 +77,23 @@
     
     contentView.backgroundColor = [UIColor blueColor];
     scrollView.backgroundColor = [UIColor redColor];
+    
+    // create page indicator
+    self.pageControl = [[UIPageControl alloc] init];
+    self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(scrollView.frame), imageViewWidth, 20);
+    self.pageControl.numberOfPages = images.count;
+    
+    [self.view addSubview:self.pageControl];
+    
+}
+
+#pragma mark - UIScrollViewDelegate
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSInteger currentPage = scrollView.contentOffset.x / 320;
+    
+    self.pageControl.currentPage = currentPage;
 }
 
 @end
